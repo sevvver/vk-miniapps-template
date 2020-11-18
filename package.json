@@ -1,0 +1,51 @@
+{
+  "name": "mini-app",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "./",
+  "main": "index.js",
+  "scripts": {
+    "gitdeploy": "gh-pages -d build",
+    "m": "vk-miniapps-deploy",
+    "deploy": "vk-miniapps-deploy",
+    "start": "cross-env PORT=8080 react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "ssl": "ssh -R 80:localhost:8080 ssh.localhost.run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@vkontakte/vk-miniapps-deploy": "^0.0.11",
+    "cross-env": "^5.2.1",
+    "gh-pages": "^2.2.0",
+    "react-hot-loader": "^4.12.19",
+    "react-scripts": "^3.4.1"
+  },
+  "dependencies": {
+    "@vkontakte/icons": "^1.20.2",
+    "@vkontakte/vk-bridge": "^2.2.0",
+    "@vkontakte/vkui": "^3.5.4",
+    "axios": "^0.19.2",
+    "chalk": "^2.4.2",
+    "core-js": "^3.6.5",
+    "eslint": "^6.8.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-roulette": "0.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+npm-debug.log*
+*.lock
+/node_modules
+.npm
+/build
+.idea
+.eslintrc.js
